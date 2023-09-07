@@ -61,12 +61,7 @@
         line-height: 1.8;
         color: rgba(255, 255, 255, 0.5);
       }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
+      h2 {
         font-family: "Work Sans", sans-serif;
         margin-top: 0;
         font-weight: normal;
@@ -86,7 +81,6 @@
         position: relative;
         z-index: 0;
       }
-
       .hero .overlay {
         position: absolute;
         top: 0;
@@ -120,8 +114,6 @@
         padding: 2.5em;
       }
       /*HEADING SECTION*/
-      .heading-section {
-      }
       .heading-section h2 {
         color: rgba(255, 255, 255, 0.9);
         font-size: 28px;
@@ -175,8 +167,6 @@
         color: #ffffff;
       }
       /*TRAINER*/
-      /* .trainer {
-      } */
       .trainer h2 {
         margin-bottom: 5px;
       }
@@ -194,13 +184,74 @@
         background: #dd0a35;
         color: #ffffff;
       }
+      /* "FITNESS PROGRAM"*/
+      .text-program {
+        padding-left: 25px;
+      }
+      .text-program .price {
+        font-size: 20px;
+        margin-bottom: 0;
+        color: #dd0a35;
+      }
+      .text-program h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .text-program p {
+        margin-top: 0;
+      }
+      @media screen and (max-width: 500px) {
+        body {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+
+        .hero .text h2 {
+          font-size: 28px;
+        }
+        .heading-section h2 {
+          font-size: 24px;
+        }
+        .email-section {
+          padding: 2em;
+        }
+        .text-program {
+          padding-left: 20px;
+        }
+        .text-program .price {
+          font-size: 18px;
+        }
+        .text-program h2 {
+          font-size: 16px;
+          margin-bottom: 6px;
+          font-weight: 400;
+        }
+        .text-program p {
+          font-size: 13px;
+        }
+      }
+      @media screen and (max-width: 420px) {
+        .hero .text h2 {
+          font-size: 25px;
+        }
+        .heading-section h2 {
+          font-size: 20px;
+        }
+        .email-section {
+          padding: 1em 0.5em 1em 0;
+        }
+        .text-program {
+          padding-left: 10px;
+        }
+      }
     </style>
   </head>
   <body
     width="100%"
     style="margin: 0; padding: 0 in !important; background-color: #202020"
   >
-    <center style="width: 100%; background-color: #f1f1f1">
+    <center style="width: 100%; background-color: #b3acac">
       <div class="email-container" style="max-width: 600px; margin: 0 auto">
         <!-- Start email body -->
         <table
@@ -478,10 +529,7 @@
                           />
                         </td>
                         <td valign="middle" width="50%">
-                          <div
-                            class="text-program"
-                            style="text-align: left; padding-left: 25px"
-                          >
+                          <div class="text-program" style="text-align: left">
                             <span class="price">$98<small>/mon</small></span>
                             <h2>Cardio Program</h2>
                             <p>
@@ -496,7 +544,8 @@
                       </tr>
                       <!--maybe an unneccassary tr?-->
                     </table>
-                    <tr><!--maybe an unneccassary tr?-->
+                    <tr>
+                      <!--maybe an unneccassary tr?-->
                       <td style="padding-bottom: 30px">
                         <table
                           role="presentation"
@@ -522,11 +571,10 @@
                             <td valign="middle" width="50%">
                               <div
                                 class="text-program"
-                                style="text-align: left; padding-left: 25px"
+                                style="text-align: left"
                               >
-                                <p class="meta">
-                                  <span>Posted on Sep 18, 2023</span>
-                                  <span>Food</span>
+                                <p>
+                                  <span><i>Posted on Sep 18, 2023</i></span>
                                 </p>
                                 <h2>Body Form Program</h2>
                                 <p>
@@ -536,14 +584,16 @@
                                 </p>
                                 <p>
                                   <a href="#" class="btn btn-primary"
-                                    >Read more</a>
+                                    >Read more</a
+                                  >
                                 </p>
                               </div>
                             </td>
                           </tr>
                         </table>
                       </td>
-                    </tr><!--maybe an unneccassary tr?-->
+                    </tr>
+                    <!--maybe an unneccassary tr?-->
                   </td>
                 </tr>
               </table>
@@ -552,7 +602,66 @@
           </tr>
           <!-- END email body -->
         </table>
-        
+        <!-- footer -->
+        <table
+          align="center"
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          style="margin: auto"
+        >
+          <tr>
+            <td valign="middle" class="bg_black email-section footer">
+              <table>
+                <tr>
+                  <td valign="top" width="33.333%">
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td style="text-align: left; padding-right: 10px">
+                          <p>&copy; 2018 Stories. All Rights Reserved</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td valign="top" width="33.333%">
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            text-align: right;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                          "
+                        >
+                          <p>
+                            <a href="#" style="color: rgb(255, 100, 100)"
+                              >Unsubscribe</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END footer -->
       </div>
     </center>
   </body>
