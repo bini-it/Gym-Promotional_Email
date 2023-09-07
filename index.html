@@ -58,10 +58,28 @@
         font-family: "Work Sans", sans-serif;
         font-weight: 400;
         font-size: 15px;
+        line-height: 1.8;
         color: rgba(255, 255, 255, 0.5);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Work Sans", sans-serif;
+        margin-top: 0;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.9);
       }
       .bg_white {
         background-color: #ffffff;
+      }
+      .bg_black {
+        background: #000000;
+      }
+      .bg_dark {
+        background: rgba(0, 0, 0, 0.8);
       }
       /* HERO */
       .hero {
@@ -77,7 +95,7 @@
         bottom: 0;
         content: "";
         width: 100%;
-        /* background: #000; */
+        background: #000;
         z-index: -1;
         opacity: 0.3;
       }
@@ -97,6 +115,84 @@
         bottom: -30px;
         left: 0;
         right: 0;
+      }
+      .email-section {
+        padding: 2.5em;
+      }
+      /*HEADING SECTION*/
+      .heading-section {
+      }
+      .heading-section h2 {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 28px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .heading-section .subheading {
+        margin-bottom: 20px !important;
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.4);
+        position: relative;
+      }
+      .heading-section .subheading::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: #dd0a35;
+        margin: 0 auto;
+      }
+      .heading-section .subheading::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        content: "";
+        width: 60%;
+        height: 2px;
+        background: #dd0a35;
+        margin: 0 auto;
+      }
+
+      .heading-section-white {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .heading-section-white h2 {
+        font-family: "Work Sans", sans-serif;
+        line-height: 1;
+        padding-bottom: 0;
+      }
+      .heading-section-white h2 {
+        color: #ffffff;
+      }
+      /*TRAINER*/
+      /* .trainer {
+      } */
+      .trainer h2 {
+        margin-bottom: 5px;
+      }
+      .trainer span {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+      }
+      /* BUTTONS*/
+      .btn {
+        padding: 5px 15px;
+        display: inline-block;
+      }
+      .btn.btn-primary {
+        border-radius: 30px;
+        background: #dd0a35;
+        color: #ffffff;
       }
     </style>
   </head>
@@ -126,10 +222,11 @@
                 height: 400px;
               "
             >
-              <div class="overlay"></div>
               <!-- transparent cover for bg image -->
+              <div class="overlay"></div>
 
               <table>
+                <!-- first row -->
                 <tr>
                   <td>
                     <div
@@ -159,7 +256,303 @@
             </td>
           </tr>
           <!-- END first row -->
+          <!-- second row -->
+          <tr>
+            <td
+              class="email-section bg_black"
+              style="text-align: center; padding-top: 5em"
+            >
+              <div class="heading-section heading-section-white">
+                <span class="subheading">Welcome</span>
+                <h2>Welcome to Gym-Fam</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio, ad! Accusantium earum necessitatibus velit officia
+                  sit minus dolore, alias repudiandae suscipit similique!
+                </p>
+              </div>
+            </td>
+          </tr>
+          <!-- END second row -->
+          <!-- trainer section -->
+          <tr>
+            <td class="bg_dark" style="width: 100%">
+              <table
+                role="presentation"
+                width="100%"
+                border="0"
+                cellpadding="0"
+                cellspaceing="0"
+              >
+                <tr>
+                  <td valign="middle" width="50%">
+                    <table
+                      role="presentation"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspaceing="0"
+                    >
+                      <tr>
+                        <td>
+                          <img
+                            src="./images/bg_2.jpg"
+                            alt="image-trainer"
+                            style="
+                              width: 100%;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td valign="middle" width="50%">
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td
+                          class="trainer"
+                          style="text-align: left; padding: 25px"
+                        >
+                          <h2>Chadish Stanner</h2>
+                          <span>Gym Trainer</span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. autem.
+                          </p>
+                          <p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END trainer section -->
+          <!-- gallery section -->
+          <tr>
+            <td
+              class="bg_black"
+              style="text-align: center; padding: 2.5em 0 0 0"
+            >
+              <div class="heading-section heading-section-white">
+                <span class="subheading">Gallery</span>
+                <h2>Gallery</h2>
+              </div>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td width="50%">
+                    <div class="project-entry">
+                      <img
+                        src="./images/work-1.jpg"
+                        alt="man-lifting-weight"
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          margin: auto;
+                          display: block;
+                        "
+                      />
+                    </div>
+                  </td>
+
+                  <td width="50%">
+                    <div class="project-entry">
+                      <img
+                        src="./images/work-2.jpg"
+                        alt="woman-lifiting-weight"
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          margin: auto;
+                          display: block;
+                        "
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td width="50%">
+                    <div class="project-entry">
+                      <img
+                        src="./images/work-3.jpg"
+                        alt="workout-image"
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          margin: auto;
+                          display: block;
+                        "
+                      />
+                    </div>
+                  </td>
+
+                  <td width="50%">
+                    <div class="project-entry">
+                      <img
+                        src="./images/work-4.jpg"
+                        alt="workout-image"
+                        style="
+                          width: 100%;
+                          max-width: 600px;
+                          height: auto;
+                          margin: auto;
+                          display: block;
+                        "
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END gallery section -->
+          <!-- fitness program section -->
+          <tr>
+            <td class="bg_dark email-section">
+              <div
+                class="heading-section"
+                style="text-align: center; padding: 0 30px"
+              >
+                <span class="subheading">Program</span>
+                <h2>FiTness Program</h2>
+              </div>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td style="padding-bottom: 30px">
+                    <table
+                      role="presentation"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <!--maybe an unneccassary tr?-->
+                        <td valign="middle" width="50%">
+                          <img
+                            src="./images/work-1.jpg"
+                            alt="man-lifting-weight"
+                            style="
+                              width: 100%;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                        <td valign="middle" width="50%">
+                          <div
+                            class="text-program"
+                            style="text-align: left; padding-left: 25px"
+                          >
+                            <span class="price">$98<small>/mon</small></span>
+                            <h2>Cardio Program</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet amet consectetur
+                              adipisicing elit. consectetur recusandae?
+                            </p>
+                            <p>
+                              <a href="#" class="btn btn-primary">Read more</a>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <!--maybe an unneccassary tr?-->
+                    </table>
+                    <tr><!--maybe an unneccassary tr?-->
+                      <td style="padding-bottom: 30px">
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td valign="middle" width="50%">
+                              <img
+                                src="./images/work-2.jpg"
+                                alt="woman-lifiting-weight"
+                                style="
+                                  width: 100%;
+                                  max-width: 600px;
+                                  height: auto;
+                                  margin: auto;
+                                  display: block;
+                                "
+                              />
+                            </td>
+                            <td valign="middle" width="50%">
+                              <div
+                                class="text-program"
+                                style="text-align: left; padding-left: 25px"
+                              >
+                                <p class="meta">
+                                  <span>Posted on Sep 18, 2023</span>
+                                  <span>Food</span>
+                                </p>
+                                <h2>Body Form Program</h2>
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Blanditiis mollitia, nobis
+                                  ex quae,
+                                </p>
+                                <p>
+                                  <a href="#" class="btn btn-primary"
+                                    >Read more</a>
+                                </p>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr><!--maybe an unneccassary tr?-->
+                  </td>
+                </tr>
+              </table>
+              <!-- fitness program section -->
+            </td>
+          </tr>
+          <!-- END email body -->
         </table>
+        
       </div>
     </center>
   </body>
